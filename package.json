@@ -1,0 +1,22 @@
+{
+  "name": "basic-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "build": "npm run sass:build && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "sass:watch": "node-sass -w src/styles/scss -o src/styles/css",
+    "sass:build": "node-sass src/styles/scss -o src/styles/css --source-map true",
+    "start": "concurrently \"npm run sass:build && react-scripts start\" \"npm run sass:watch\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.9.0"
+  }
+}
