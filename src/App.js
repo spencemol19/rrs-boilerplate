@@ -16,7 +16,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React with Redux and SCSS</h1>
         </header>
         <p className="App-intro">
-          <b>Breakpoint utility reducer included:</b> <br/><br/>
+          <b>Breakpoint detection utility included:</b> <br/><br/>
           Current screen width: {screenWidth}px <br/><br/>
           Currently in: {isMobile ? isPhone ? 'Phone View' : 'Tablet View' : 'Desktop View'}
         </p>
