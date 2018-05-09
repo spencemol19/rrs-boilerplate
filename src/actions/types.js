@@ -1,0 +1,1 @@
+export const SCREEN_RESIZE = 'screen_resize';
